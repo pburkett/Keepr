@@ -1,0 +1,168 @@
+@import "./_variables.scss";
+@import "bootstrap";
+@import "./_transitions.scss";
+@import "./_overrides.scss";
+
+:root {
+  --grey: #f6f6f6;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+}
+.bg-gray {
+  background-color: $gray !important;
+}
+.c-pointer {
+  cursor: pointer !important;
+}
+.elevation-1 {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms !important;
+}
+.elevation-2 {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms !important;
+}
+.elevation-3 {
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms !important;
+}
+.elevation-4 {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms !important;
+}
+.elevation-5 {
+  box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms !important;
+}
+.hover-el-5:hover {
+  @extend .elevation-5;
+  transition: 250ms !important;
+}
+.rounded-2 {
+  border-radius: 20px !important;
+}
+.border-2 {
+  border-width: 0.25rem !important;
+}
+.border-3 {
+  border-width: 0.33rem !important;
+}
+.border-4 {
+  border-width: 0.5rem !important;
+}
+.border-5 {
+  border-width: 0.75rem !important;
+}
+.f-8 {
+  font-size: 8pt !important;
+}
+.f-10 {
+  font-size: 10pt !important;
+}
+.f-12 {
+  font-size: 12pt !important;
+}
+.f-14 {
+  font-size: 14pt !important;
+}
+.f-16 {
+  font-size: 16pt !important;
+}
+.f-18 {
+  font-size: 18pt !important;
+}
+.f-20 {
+  font-size: 20pt !important;
+}
+.f-22 {
+  font-size: 22pt !important;
+}
+.f-24 {
+  font-size: 24pt !important;
+}
+.square {
+  border-radius: 0 !important;
+}
+.hover-topleft:hover {
+  transition: 250ms;
+  transform: rotate(3deg) translateX(-8px) translateY(-8px);
+}
+.hover-topleft {
+  transition: transform 250ms !important;
+}
+.hover-topright:hover {
+  transition: 250ms;
+  transform: rotate(-3deg) translateX(8px) translateY(-8px);
+}
+.hover-topright {
+  transition: transform 250ms !important;
+}
+.hover-bottomright:hover {
+  transition: 250ms;
+  transform: translateX(8px) translateY(8px);
+}
+.hover-bottomright {
+  transition: transform 250ms !important;
+}
+.square-left {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.square-right {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.square-top {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+.square-bottom {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.no-wrap{
+  flex-wrap: nowrap;
+}
+.trash-hover:hover{
+color: $danger;
+@extend .c-pointer;
+}
+.form-inp {
+  border-radius: 5px;
+  border: 1px solid $gray;
+  padding: 5px;
+  width: 100%;
+}
+.form-textarea {
+  @extend .form-inp;
+  height: 100px;
+}
+.form-check{
+  height: 18px;
+  width: 18px;
+}
+.modal-border {
+  border: 2px solid $primary;
+}
+.bg-off-white{
+  background-color: $off-white !important;
+}
+.fw-700{
+  font-weight: 700;
+}
+.w-fc {
+  width: fit-content;
+}
